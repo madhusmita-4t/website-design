@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title> log in and Registration form</title>
+        <link rel="stylesheet" href="cascade.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="card">
+                <div class="inner_box" id="card">
+                    <div class="card_front">
+                        <h2> LOG IN </h2>
+                        <form>
+                            <input type="email" class="input_box" placeholder="Your Email Id" required>
+                            <input type="password" class="input_box" placeholder="password" required>
+                            <button type="submit" class="sumbit_btn"> Submit</button>
+                            <input type="checkbox"><span> Remember Me</span>
+                        </form>
+                        <button type="button" class="btn" onclick="openRegister()">I'm New Here </button>
+                        <a href="">Forgot password</a>
+                    </div>
+                     <div class="card_back">
+                            <h2> REGISTER </h2>
+                            <form>
+                                <input type="text" class="input_box" placeholder="Your Name" required>
+                                <input type="email" class="input_box" placeholder="Your Email Id" required>
+                                <input type="password" class="input_box" placeholder="password" required>
+                                <button type="submit" class="sumbit_btn"> Submit</button>
+                                <input type="checkbox"><span> Remember Me</span>
+                            </form>
+                            <button type="button" class="btn" onclick="openLogIn()">I've an Account </button>
+                            <a href="">Forgot password</a>
+                     </div>
+                    
+                </div>
+            </div>
+        </div>
+        <script>
+            var  card=document.getElementById("card");
+            function openRegister(){
+                card.style.transform ="rotateY(-180deg)";
+            }
+            function openLogIn(){
+                card.style.transform ="rotateY(0deg)";
+            }
+        </script>
+    </body>
+</html>
